@@ -2,7 +2,7 @@
   <section class="grid grid-cols-1 sm:grid-cols-2 gap-18 text-start py-4 px-10 lg:px-30">
     <div v-for="item in reasonData" :key="item.title" class="flex">
       <div class="bg-red-500 h-[80px] w-[80px] rounded-md p-2">
-        <img :src="item.icon" alt="shield-icon" class="invert">
+        <img :src="item.icon" alt="shield-icon" class="invert" loading="lazy">
       </div>
       <div class="flex-1 px-6">
         <h1 class="text-[20px] font-bold">{{ item.title }}</h1>

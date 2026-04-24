@@ -77,9 +77,10 @@
       certifications in the painting
       industry, guaranteeing exceptional solutions for your space.</p>
     <div class="flex flex-wrap justify-center mt-4 gap-4">
-      <img src="@/assets/logos/dulux.png" alt="dulux-logo-icon" class="w-[200px] h-auto object-contain">
-      <img src="@/assets/logos/nippon.png" alt="nippon-logo-icon" class="w-[200px] h-auto object-contain">
-      <img src="@/assets/logos/jotun.png" alt="jotun-logo-icon" class="w-[200px] h-auto object-contain">
+      <img src="@/assets/logos/dulux.png" alt="dulux-logo-icon" loading="lazy" class="w-[200px] h-auto object-contain">
+      <img src="@/assets/logos/nippon.png" alt="nippon-logo-icon" loading="lazy"
+        class="w-[200px] h-auto object-contain">
+      <img src="@/assets/logos/jotun.png" alt="jotun-logo-icon" loading="lazy" class="w-[200px] h-auto object-contain">
     </div>
   </section>
   <section class="text-center px-12 my-15 py-15 bg-gray-50">
@@ -106,7 +107,7 @@
       <div class="bg-white rounded-lg p-10 text-start">
         <div class="flex mb-6">
           <template v-for="star in 5" :key="star">
-            <img src="@/assets/icons/star-solid-full.svg" alt="star-icon"
+            <img src="@/assets/icons/star-solid-full.svg" alt="star-icon" loading="lazy"
               class="w-7 h-7 [filter:invert(85%)_sepia(50%)_saturate(2000%)_hue-rotate(350deg)_brightness(105%)_contrast(100%)]">
           </template>
         </div>
@@ -124,7 +125,7 @@
       <div class="bg-white rounded-lg p-10 text-start">
         <div class="flex mb-6">
           <template v-for="star in 5" :key="star">
-            <img src="@/assets/icons/star-solid-full.svg" alt="star-icon"
+            <img src="@/assets/icons/star-solid-full.svg" alt="star-icon" loading="lazy"
               class="w-7 h-7 [filter:invert(85%)_sepia(50%)_saturate(2000%)_hue-rotate(350deg)_brightness(105%)_contrast(100%)]">
           </template>
         </div>
@@ -142,7 +143,7 @@
       <div class="bg-white rounded-lg p-10 text-start">
         <div class="flex mb-6">
           <template v-for="star in 5" :key="star">
-            <img src="@/assets/icons/star-solid-full.svg" alt="star-icon"
+            <img src="@/assets/icons/star-solid-full.svg" alt="star-icon" loading="lazy"
               class="w-7 h-7 [filter:invert(85%)_sepia(50%)_saturate(2000%)_hue-rotate(350deg)_brightness(105%)_contrast(100%)]">
           </template>
         </div>
@@ -161,7 +162,7 @@
   <section class="text-center px-6 sm:px-12 my-15 py-15">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
       <template v-for="portfolio in 9" :key="portfolio">
-        <img src="@/assets/images/house.webp" alt="portfolio-image" class="rounded-lg">
+        <img src="@/assets/images/house.webp" alt="portfolio-image" loading="lazy" class="rounded-lg">
       </template>
     </div>
   </section>
@@ -175,7 +176,7 @@
       class="cursor-pointer rounded-lg bg-red-500 text-white hover:bg-orange-500 text-[18px] py-2 px-4 mt-4 transition-all"
       @click="sendWhatsapp()">
       <div class="flex justify-center items-center"><img src="@/assets/icons/whatsapp-brands-solid-full.svg"
-          alt="whatsapp-icon" class="invert w-8 h-8">
+          alt="whatsapp-icon" loading="lazy" class="invert w-8 h-8">
         Whatsapp
         Now</div>
     </button>
@@ -189,22 +190,27 @@
       </div>
       <div class="flex items-center justify-center gap-6">
         <button class="cursor-pointer hover:opacity-60 transition-all">
-          <img src="@/assets/icons/facebook-brands-solid-full.svg" alt="social-media" class="w-5 h-5 invert">
+          <img src="@/assets/icons/facebook-brands-solid-full.svg" alt="social-media" loading="lazy"
+            class="w-5 h-5 invert">
         </button>
         <button class="cursor-pointer hover:opacity-60 transition-all">
-          <img src="@/assets/icons/instagram-brands-solid-full.svg" alt="social-media" class="w-5 h-5 invert">
+          <img src="@/assets/icons/instagram-brands-solid-full.svg" alt="social-media" loading="lazy"
+            class="w-5 h-5 invert">
         </button>
         <button class="cursor-pointer hover:opacity-60 transition-all">
-          <img src="@/assets/icons/tiktok-brands-solid-full.svg" alt="social-media" class="w-5 h-5 invert">
+          <img src="@/assets/icons/tiktok-brands-solid-full.svg" alt="social-media" loading="lazy"
+            class="w-5 h-5 invert">
         </button>
         <button class="cursor-pointer hover:opacity-60 transition-all">
-          <img src="@/assets/icons/whatsapp-brands-solid-full.svg" alt="social-media" class="w-5 h-5 invert">
+          <img src="@/assets/icons/whatsapp-brands-solid-full.svg" alt="social-media" loading="lazy"
+            class="w-5 h-5 invert">
         </button>
         <button class="cursor-pointer hover:opacity-60 transition-all">
-          <img src="@/assets/icons/mobile-screen-button-solid-full.svg" alt="social-media" class="w-5 h-5 invert">
+          <img src="@/assets/icons/mobile-screen-button-solid-full.svg" alt="social-media" loading="lazy"
+            class="w-5 h-5 invert">
         </button>
         <button class="cursor-pointer hover:opacity-60 transition-all">
-          <img src="@/assets/icons/envelope-solid-full.svg" alt="social-media" class="w-5 h-5 invert">
+          <img src="@/assets/icons/envelope-solid-full.svg" alt="social-media" loading="lazy" class="w-5 h-5 invert">
         </button>
       </div>
     </div>
