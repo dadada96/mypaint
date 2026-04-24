@@ -342,7 +342,12 @@ const tabClicked = (tabIndex) => {
 
 const sendWhatsapp = () => {
   const phone = '601127363634'
-  const message = 'Hi there!'
+  const message = `*🎨 NEW PAINTING INQUIRY*
+
+- *Name:* - *Area:* - *Property Type:* [Condo/Landed]
+- *Service:* [Wall/Ceiling/Gate]
+
+Please fill in the details above for a faster quote!`;
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`
   window.open(url, '_blank')
 }
