@@ -15,9 +15,10 @@
         </section>
         <section class="mt-8 flex flex-col sm:flex-row w-full items-center sm:justify-between gap-4 sm:gap-10">
           <button
-            class="cursor-pointer rounded-lg max-w-[250px] sm:max-w-none bg-red-500 text-white hover:bg-orange-500 text-[22px] p-4 w-full transition-all">Get
+            class="cursor-pointer rounded-lg max-w-[250px] sm:max-w-none bg-red-500 text-white hover:bg-orange-500 text-[22px] p-4 w-full transition-all"
+            @click="scrollToSection('quote')">Get
             Free Quote</button>
-          <button @click="scrollToSection()"
+          <button @click="scrollToSection('services')"
             class="cursor-pointer rounded-lg max-w-[250px] sm:max-w-none outline outline-red-500 text-red-500 hover:bg-red-500 hover:text-white text-[22px] p-4 w-full transition-all">See
             Services</button>
         </section>
@@ -166,7 +167,7 @@
       </template>
     </div>
   </section>
-  <section class="text-center px-12 my-15 py-15 bg-gray-50">
+  <section ref="quoteSection" class="text-center px-12 my-15 py-15 bg-gray-50">
     <h1 class="text-[37px] font-bold capitalize">Get a quote for your house painting project today.</h1>
     <p class="text-[20px] text-gray-600 my-4">Simply click the button, fill out the form, and you’ll be connected with
       our
@@ -239,6 +240,7 @@ import ChooseUs from './ChooseUs.vue';
 import StepCard from './StepCards.vue';
 
 const myServiceElement = useTemplateRef('myServiceElement')
+const quoteSection = useTemplateRef('quoteSection')
 
 const activeTabIndex = ref(0)
 
@@ -326,8 +328,12 @@ const specializedData = ref([
   },
 ])
 
-const scrollToSection = () => {
-  myServiceElement.value?.scrollIntoView({ behavior: 'smooth' })
+const scrollToSection = (section) => {
+  if (section === 'quote') {
+    quoteSection.value?.scrollIntoView({ behavior: 'smooth' })
+  } else {
+    myServiceElement.value?.scrollIntoView({ behavior: 'smooth' })
+  }
 }
 
 const tabClicked = (tabIndex) => {
