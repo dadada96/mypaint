@@ -344,7 +344,9 @@ const sendWhatsapp = () => {
   const phone = '601127363634'
   const message = `*🎨 NEW PAINTING INQUIRY*
 
-- *Name:* - *Area:* - *Property Type:* [Condo/Landed]
+- *Name:*
+- *Area:*
+- *Property Type:* [Condo/Landed]
 - *Service:* [Wall/Ceiling/Gate]
 
 Please fill in the details above for a faster quote!`;
